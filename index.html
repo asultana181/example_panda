@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>panda commerce</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="panda_style.css">
   </head>
   <body>
     <header class="container">
         <!-- navigation part -->
-        <nav class="navbar navbar-expand-lg bg-light">
+        <nav class="navbar navbar-expand-lg bg-light fixed-top">
             <div class="container">
               <a class="navbar-brand" href="#">
                 <img src="images/logo.png" alt="">
@@ -23,13 +24,13 @@
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">shoes</a>
+                    <a class="nav-link" href="#shoes">shoes</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">backpack</a>
+                    <a class="nav-link" href="#backpacks">backpack</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">subscribe</a>
+                    <a class="nav-link" href="#subscribe">subscribe</a>
                   </li>
                 
                 </ul>
@@ -41,7 +42,7 @@
           <section class="mt-5">
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
-                  <div class="carousel-item active bg-info p-5 ">
+                  <div class="carousel-item active panda-bg-info p-5 ">
                    <div class="row d-flex align-items-center">
                     <div class="col-lg-7">
                        <h2>Cool Dude Headphone</h2>
@@ -58,7 +59,7 @@
 
                    </div>
                   </div>
-                  <div class="carousel-item bg-info ">
+                  <div class="carousel-item panda-bg-info ">
                     <div class="row d-flex align-items-center p-5">
                         <div class="col-lg-7">
                             <h2>Cool Dude Tv</h2>
@@ -74,7 +75,7 @@
     
                        </div>
                   </div>
-                  <div class="carousel-item bg-info">
+                  <div class="carousel-item panda-bg-info">
                     <div class="row d-flex align-items-center p-5">
                         <div class="col-lg-7">
                             <h2>Cool Dude box</h2>
@@ -108,7 +109,7 @@
     <!-- categories start -->
     <section>
         <div class="container text-center my-5">
-            <div class="row g-2 ">
+            <div class="row g-4 category">
               <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="p-3 rounded bg-warning d-flex align-items-center">
                     <h1 class="text-white">watch</h1>
@@ -116,13 +117,13 @@
                 </div>
               </div>
               <div class="col-lg-4 col-md-6 col-sm-12">
-                <div class="p-3 rounded bg-warning d-flex">
+                <div class="p-3 rounded bg-success d-flex">
                     <h1 class="text-white">Bags</h1>
                     <img src="images/categories/bag.png" alt="">
                 </div>
               </div>
               <div class="col-lg-4 col-md-6 col-sm-12">
-                <div class="p-3 rounded bg-warning d-flex">
+                <div class="p-3 rounded bg-primary d-flex">
                     <h1 class="text-white">shoes</h1>
                     <img src="images/categories/shoes.png" alt="">
                 </div>
@@ -132,7 +133,7 @@
           </div>
     </section>
     <!-- shoes section start -->
-    <section class="container">
+    <section class="container" id="shoes">
       <h2>Shoes</h2>
       <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 my-3">
         <div class="col">
@@ -142,7 +143,7 @@
               <h5 class="card-title">Supply 350</h5>
               <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
             </div>
-            <div class=""><button type="button" class="btn btn-info mx-3 my-3">Buy Now</button></div>
+            <div class=""><button type="button" class="btn panda_but mx-3 my-3">Buy Now</button></div>
           </div>
         </div>
         <div class="col">
@@ -152,7 +153,7 @@
               <h5 class="card-title">Nike 360</h5>
               <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
             </div>
-            <div class=""><button type="button" class="btn btn-info mx-3 my-3">Buy Now</button></div>
+            <div class=""><button type="button" class="btn panda_but mx-3 my-3">Buy Now</button></div>
           </div>
         </div>
         <div class="col">
@@ -162,12 +163,70 @@
               <h5 class="card-title">Red Airmax</h5>
               <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
             </div>
-            <div class=""><button type="button" class="btn btn-info mx-3 my-3">Buy Now</button></div>
+            <div class=""><button type="button" class="btn panda_but mx-3 my-3">Buy Now</button></div>
           </div>
         </div>
         
       </div>
     </section>
+    <!-- bags section start -->
+    <section class="container" id="backpacks">
+      <h2>Bags</h2>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 my-3">
+        <div class="col">
+          <div class="card border border-0 shadow p-3 mb-5 bg-body rounded my-3">
+            <img src="images/bags/bag-1.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Red laltu bag</h5>
+              <h2>$160</h2>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+            <div class=""><button type="button" class="btn panda_but mx-3 my-3">Buy Now</button></div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card border border-0 shadow p-3 mb-5 bg-body rounded my-3">
+            <img src="images/bags/bag-2.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Nike 360</h5>
+              <h2>$160</h2>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+            <div class=""><button type="button" class="btn panda_but mx-3 my-3">Buy Now</button></div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card border border-0 shadow p-3 mb-5 bg-body rounded my-3">
+            <img src="images/bags/bag-3.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Red Airmax</h5>
+              <h2>$160</h2>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+            </div>
+            <div class=""><button type="button" class="btn panda_but mx-3 my-3">Buy Now</button></div>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+    <!-- subscribe start -->
+    <section style= "height:360px ;" id="subscribe" class="container d-flex justify-content-center align-items-center sub-color">
+         <div>
+          <h1>LET'S STAY IN TOUCH</h1>
+          <p>Get updates on sales, specials and more</p>
+          <form>
+            
+            <div class="mb-3">
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <button type="submit" class="btn panda_but">Submit</button>
+          </form>
+         </div>
+    </section>
+    <!-- footer part -->
+    <footer class="my-3 text-center">
+      <p>©2023. Panda Commerce. All rights reserved. Sofia, Bulgaria.</p>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
   </body>
